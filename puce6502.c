@@ -52,14 +52,9 @@ struct Register {
 } reg;
 
 
-// 	instruction timing :
-//  http://nparker.llx.com/a2/opcodes.html
-//  http://wouter.bbcmicro.net/general/6502/6502_opcodes.html
-
-// IMPLEMENTED :
-// The conditional branch instructions require a second extra cycle if the
-// branch happens and crosses a page boundary.
-
+// instruction timing :
+//    http://nparker.llx.com/a2/opcodes.html
+//    http://wouter.bbcmicro.net/general/6502/6502_opcodes.html
 // NOT IMPLEMENTED :
 // Absolute-X, absolute-Y, and Zpage-Y addressing modes need an extra cycle
 // if indexing crosses a page boundary, or if the instruction writes to memory.
