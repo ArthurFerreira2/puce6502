@@ -1,7 +1,7 @@
 # puce6502
 
 This is a simple and readable emulation of the MOS 6502 CPU\
-It passes the [Klaus Test Suite](https://github.com/Klaus2m5/6502_65C02_functional_tests), implements all original instructions and is cycle accurate excepted for :
+It implements all original MOS6502 instructions, passes the [Klaus Test Suite](https://github.com/Klaus2m5/6502_65C02_functional_tests) and is cycle accurate excepted for :
 
 *Absolute-X, absolute-Y, and Zero page-Y addressing modes which need an extra cycle if indexing crosses a page boundary, or if the instruction writes to memory.*
 
