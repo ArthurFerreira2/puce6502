@@ -42,8 +42,9 @@ extern uint8_t softSwitches(uint16_t address, uint8_t value);
 
 struct Operand {
   uint8_t code;
+  uint8_t value;
+  uint16_t address;
   bool setAcc;
-  uint16_t value, address;
 } ope;
 
 struct Register {
