@@ -20,8 +20,8 @@ You are expected to provide the functions to handle read and writes to memory (R
 They have to comply with these prototypes :
 
 ```C
-extern uint8_t readMem(uint16_t address);
-extern void writeMem(uint16_t address, uint8_t value);
+uint8_t readMem(uint16_t address);
+void writeMem(uint16_t address, uint8_t value);
 ```
 
 finnaly, you can import the variable `ticks` (extern ticks) into your code - it holds the accumulated clock cycles since start.
