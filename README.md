@@ -16,7 +16,7 @@ void puce6502NMI();
 The first function will execute as many instructions as needed to reach cycleCount clock cycles - it will return the updated value of the Program Counter
 the 3 others will simulate a RESET, INTERUPT and NON-MASKABLE INTERUPT.
 
-You are expected to provide the functions to handle read and writes to memory (ROM, RAM, Soft Switches, extension cards ROMs, PIA, VIA, ACIA etc...)
+You are expected to provide the functions to handle read and writes to memory (ROM, RAM, Soft Switches, extension cards, PIA, VIA, ACIA etc...)
 They have to comply with these prototypes :
 
 ```C
