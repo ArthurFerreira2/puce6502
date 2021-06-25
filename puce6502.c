@@ -698,13 +698,12 @@ uint16_t getPC(){
 				oldticks = ticks;
 
 			  if (newPC == 0x3469){  // 6502_functional_test SUCCESS
-					printf("\nReached end of 6502_functional_test @ %04X : SUCCESS !\n", newPC);
+					printf("\nReached end of 6502_functional_test @ 0x3469 : SUCCESS !\n");
 				  break;
 				}
 
 				if (newPC == oldPC ) {
 					printf("\n\nLoop detected @ %04X - Press ENTER to proceed with next test or CTRL<C> to stop\n\n", newPC);
-					return(-1);
 					getchar();
 					reg.PC = newPC + 2;
 				}
